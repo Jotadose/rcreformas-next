@@ -2,13 +2,6 @@ import React from "react";
 import { servicesData } from "@/data/siteData";
 import { Page } from "@/types";
 import Card from "@/components/ui/Card";
-import * as Icons from "lucide-react";
-
-const Icon = ({ name, ...props }: { name: string } & Icons.LucideProps) => {
-  const LucideIcon = Icons[name as keyof typeof Icons];
-  if (!LucideIcon) return <Icons.HelpCircle {...props} />;
-  return <LucideIcon {...props} />;
-};
 
 interface ServicesSectionProps {
   summary?: boolean;
@@ -39,11 +32,8 @@ const ServicesSection = ({
               key={service.id}
               className="text-center p-6 sm:p-8 border border-transparent hover:border-brand-yellow transition-colors duration-300"
             >
-              <Icon
-                name={service.icon}
-                className="mx-auto text-brand-yellow mb-4"
-                size={40}
-              />
+              {/* Se renderiza el emoji directamente */}
+              <div className="text-5xl mb-4">{service.icon}</div>
               <h3 className="text-lg sm:text-xl font-bold uppercase text-main-text mb-2">
                 {service.title}
               </h3>

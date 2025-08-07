@@ -4,56 +4,55 @@ export const servicesData = [
     title: "Remodelaciones Integrales",
     description:
       "Transformamos espacios completos, desde la planificación hasta los acabados finales.",
-    icon: "Home",
+    icon: "🏠",
   },
   {
     id: 2,
     title: "Obra Nueva",
     description:
       "Construimos desde cero, garantizando calidad estructural y cumplimiento de plazos.",
-    icon: "Building",
+    icon: "🏗️",
   },
   {
     id: 3,
     title: "Mantenimiento Comercial",
     description: "Soluciones eficientes para que tu negocio nunca se detenga.",
-    icon: "Store",
+    icon: "🏢",
   },
   {
     id: 4,
     title: "Diseño de Interiores",
     description:
       "Creamos ambientes funcionales y estéticos que reflejan tu estilo.",
-    icon: "Paintbrush",
+    icon: "🎨",
   },
   {
     id: 5,
     title: "Ampliaciones",
     description:
       "Expandimos tus espacios para adaptarnos a tus nuevas necesidades.",
-    icon: "PlusSquare",
+    icon: "➕",
   },
   {
     id: 6,
     title: "Instalaciones Eléctricas",
     description:
       "Servicios eléctricos seguros y certificados por profesionales.",
-    icon: "Zap",
+    icon: "⚡️",
   },
-  // CORRECCIÓN: Se eliminaron las comillas de la clave 'title'
   {
     id: 7,
     title: "Gasfitería Profesional",
     description:
       "Soluciones de plomería rápidas y duraderas para cualquier problema.",
-    icon: "Wrench",
+    icon: "💧",
   },
   {
     id: 8,
     title: "Pintura y Acabados",
     description:
       "Acabados de alta calidad que renuevan y protegen tus superficies.",
-    icon: "PaintRoller",
+    icon: "🖌️",
   },
 ];
 export const portfolioData = [

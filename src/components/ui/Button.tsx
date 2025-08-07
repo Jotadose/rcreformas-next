@@ -1,12 +1,21 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, HTMLMotionProps } from "framer-motion";
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+// Se corrige la interfaz para ser más específica y evitar conflictos de tipos.
+interface ButtonProps {
+  onClick?: () => void;
+  type?: "button" | "submit" | "reset";
   variant?: "primary" | "secondary";
   children: React.ReactNode;
+  className?: string;
 }
 
-const Button = ({ children, variant = "primary", ...props }: ButtonProps) => {
+const Button = ({
+  children,
+  variant = "primary",
+  className,
+  ...props
+}: ButtonProps) => {
   const baseClasses =
     "px-8 py-4 font-bold uppercase rounded-lg shadow-lg transition-all duration-300 transform";
 
@@ -20,7 +29,7 @@ const Button = ({ children, variant = "primary", ...props }: ButtonProps) => {
     <motion.button
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
-      className={`${baseClasses} ${variants[variant]}`}
+      className={`${baseClasses} ${variants[variant]} ${className}`}
       {...props}
     >
       {children}
