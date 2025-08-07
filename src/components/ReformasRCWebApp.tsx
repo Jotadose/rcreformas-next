@@ -552,7 +552,7 @@ const Contact = () => (
             <textarea
               id="message"
               name="message"
-              rows="4"
+              rows={4}
               className="mt-1 block w-full bg-light-bg border-transparent rounded-md py-2 px-3 text-main-text focus:outline-none focus:ring-2 focus:ring-brand-yellow"
             ></textarea>
           </div>
