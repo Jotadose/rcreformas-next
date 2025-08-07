@@ -1,8 +1,17 @@
-import React, { useState, useEffect } from "react";
-import Image from "next/image"; // Importar el componente Image de Next.js
+import React, { useState, useEffect, Dispatch, SetStateAction } from "react";
+import Image from "next/image";
+
+// --- Type Definitions for Props ---
+// This tells TypeScript what kind of data our components expect.
+type SetPageProp = {
+  setPage: Dispatch<SetStateAction<string>>;
+};
+
+type ServicesProps = SetPageProp & {
+  summary?: boolean;
+};
 
 // --- Helper Data ---
-// Datos de ejemplo para servicios y proyectos.
 const servicesData = [
   {
     id: 1,
@@ -181,7 +190,7 @@ const BackToTopButton = () => {
 
 // --- Main Layout Components ---
 
-const Header = ({ setPage }) => {
+const Header = ({ setPage }: SetPageProp) => {
   const navLinks = [
     { name: "Inicio", page: "home" },
     { name: "Servicios", page: "services" },
@@ -254,7 +263,7 @@ const Footer = () => (
 
 // --- Page-specific Components ---
 
-const Hero = ({ setPage }) => (
+const Hero = ({ setPage }: SetPageProp) => (
   <section className="relative py-20 md:py-32 bg-medium-bg">
     <BackgroundPattern />
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
@@ -277,7 +286,7 @@ const Hero = ({ setPage }) => (
   </section>
 );
 
-const Services = ({ summary = false, setPage }) => {
+const Services = ({ summary = false, setPage }: ServicesProps) => {
   const servicesToShow = summary ? servicesData.slice(0, 4) : servicesData;
 
   return (
@@ -563,7 +572,7 @@ const Contact = () => (
 
 // --- Page Components (for routing) ---
 
-const HomePage = ({ setPage }) => (
+const HomePage = ({ setPage }: SetPageProp) => (
   <>
     <Hero setPage={setPage} />
     <Services summary={true} setPage={setPage} />
@@ -572,7 +581,9 @@ const HomePage = ({ setPage }) => (
   </>
 );
 
-const ServicesPage = ({ setPage }) => <Services setPage={setPage} />;
+const ServicesPage = ({ setPage }: SetPageProp) => (
+  <Services setPage={setPage} />
+);
 const PortfolioPage = () => <Portfolio />;
 const AboutPage = () => <About />;
 const ContactPage = () => <Contact />;
