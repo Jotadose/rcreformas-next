@@ -1,26 +1,5 @@
 import React, { useState, useEffect } from "react";
-
-// FONT: Importar la fuente Inter desde Google Fonts en el <head> del HTML.
-// <link rel="preconnect" href="https://fonts.googleapis.com">
-// <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-// <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" rel="stylesheet">
-
-// TAILWIND CONFIG SIMULATION:
-// En un proyecto real, estas personalizaciones estarían en `tailwind.config.js`.
-// theme: {
-//   extend: {
-//     colors: {
-//       'dark-bg': '#111827',
-//       'medium-bg': '#1F2937',
-//       'light-bg': '#374151',
-//       'brand-yellow': '#FFC107',
-//       'main-text': '#F9FAFB',
-//     },
-//     fontFamily: {
-//       sans: ['Inter', 'sans-serif'],
-//     },
-//   },
-// },
+import Image from "next/image"; // Importar el componente Image de Next.js
 
 // --- Helper Data ---
 // Datos de ejemplo para servicios y proyectos.
@@ -388,9 +367,11 @@ const Portfolio = () => {
               className="group bg-medium-bg rounded-lg overflow-hidden shadow-lg"
             >
               <div className="overflow-hidden">
-                <img
+                <Image
                   src={project.imageUrl}
                   alt={project.title}
+                  width={600}
+                  height={400}
                   className="w-full h-60 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
@@ -415,10 +396,12 @@ const About = () => (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
       <div className="grid md:grid-cols-2 gap-12 items-center">
         <div>
-          <img
+          <Image
             src="https://placehold.co/600x700/1F2937/F9FAFB?text=Equipo+RC"
             alt="Equipo de Reformas RC"
-            className="rounded-lg shadow-2xl w-full"
+            width={600}
+            height={700}
+            className="rounded-lg shadow-2xl w-full h-auto"
           />
         </div>
         <div>
@@ -426,9 +409,9 @@ const About = () => (
             Humanizando la Construcción
           </h2>
           <p className="mt-4 text-lg text-main-text/70">
-            En "Reformas RC", somos más que una empresa constructora; somos un
-            equipo de profesionales apasionados dedicados a materializar tus
-            ideas con la máxima calidad y transparencia.
+            En &quot;Reformas RC&quot;, somos más que una empresa constructora;
+            somos un equipo de profesionales apasionados dedicados a
+            materializar tus ideas con la máxima calidad y transparencia.
           </p>
           <div className="mt-8 space-y-6">
             <div>
