@@ -9,7 +9,7 @@ const AboutSection = () => (
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="w-full -mt-8 md:-mt-12 md:ml-8">
             <Image
-              src="/images/reformasafiche.jpg" // Nueva imagen de alta calidad
+              src="/images/reformasafiche.jpg"
               alt="Profesional de Reformas RC planificando un proyecto"
               width={600}
               height={700}

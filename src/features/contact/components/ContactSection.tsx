@@ -9,7 +9,7 @@ const ContactSection = () => (
     {/* Imagen de fondo con superposición oscura */}
     <div className="absolute inset-0 z-0">
       <Image
-        src="/images/refor22.jpg" // Usamos una de tus imágenes
+        src="/images/refor13.jpg" // Usamos una de tus imágenes
         alt="Fondo de contacto"
         layout="fill"
         objectFit="cover"

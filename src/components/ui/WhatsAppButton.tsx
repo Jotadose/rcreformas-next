@@ -5,7 +5,7 @@ import { Phone } from "lucide-react";
 const WhatsAppButton = () => {
   return (
     <motion.a
-      href="https://wa.me/56912345678" // Cambia este número
+      href="https://wa.me/56987593649" // Cambia este número
       target="_blank"
       rel="noopener noreferrer"
       className="flex items-center justify-start w-[45px] h-[45px] bg-[#25D366] rounded-full cursor-pointer shadow-lg"

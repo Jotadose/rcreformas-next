@@ -31,7 +31,7 @@ export const servicesData = [
     title: "Ampliaciones",
     description:
       "Expandimos tus espacios para adaptarnos a tus nuevas necesidades.",
-    icon: "➕",
+    icon: "👷‍♂️",
   },
   {
     id: 6,
@@ -66,13 +66,13 @@ export const portfolioData = [
     id: 2,
     title: "Construcción de Oficina",
     category: "Obra Nueva",
-    imageUrl: "/images/refor3.jpg",
+    imageUrl: "/images/refor4.jpg",
   },
   {
     id: 3,
     title: "Acabados de Baño",
     category: "Remodelación",
-    imageUrl: "/images/refor4.jpg",
+    imageUrl: "/images/refor6.jpg",
   },
   {
     id: 4,
@@ -84,7 +84,7 @@ export const portfolioData = [
     id: 5,
     title: "Mantenimiento de Fachada",
     category: "Mantenimiento",
-    imageUrl: "/images/refor6.jpg",
+    imageUrl: "/images/refor3.jpg",
   },
   {
     id: 6,
@@ -109,5 +109,63 @@ export const portfolioData = [
     title: "Detalles de Construcción",
     category: "Mantenimiento",
     imageUrl: "/images/refor10.jpg",
+  },
+];
+// ... (después del array portfolioData)
+
+export const instagramPosts = [
+  {
+    id: "insta1",
+    imageUrl: "/images/refor12.jpg",
+    caption: "Detalles que marcan la diferencia. Acabados de primera calidad.",
+  },
+  {
+    id: "insta2",
+    imageUrl: "/images/refor13.jpg",
+    caption: "Transformando espacios exteriores. Listo para disfrutar.",
+  },
+  {
+    id: "insta3",
+    imageUrl: "/images/refor14.jpg",
+    caption: "Cada ladrillo cuenta. Cimientos sólidos para grandes proyectos.",
+  },
+  {
+    id: "insta4",
+    imageUrl: "/images/refor15.jpg",
+    caption: "La seguridad es lo primero. Instalaciones certificadas.",
+  },
+  {
+    id: "insta5",
+    imageUrl: "/images/refor16.jpg",
+    caption: "Desde el plano a la realidad. Comprometidos con tu visión.",
+  },
+  {
+    id: "insta6",
+    imageUrl: "/images/refor17.jpg",
+    caption: "Renovación completa de fachada. Una nueva primera impresión.",
+  },
+];
+// --- NUEVA SECCIÓN DE DATOS PARA TESTIMONIOS ---
+export const testimonialsData = [
+  {
+    id: 1,
+    name: "Ana, La Serena",
+    comment:
+      "El equipo de RC transformó completamente la fachada de mi casa. Su profesionalismo y atención al detalle superaron mis expectativas. ¡Totalmente recomendados!",
+    avatarUrl: "/images/refor13.jpg",
+  },
+  {
+    id: 2,
+    name: "Carlos, Coquimbo",
+    comment:
+      "Necesitaba un mantenimiento rápido y eficiente para mi local comercial y cumplieron con todo. Mínima interrupción y un trabajo impecable. Gran servicio.",
+    avatarUrl: "/images/refor23.jpg",
+  },
+  {
+    id: 3,
+    name: "Familia Torres",
+    comment:
+      "Desde el diseño hasta la ejecución de nuestra remodelación, el equipo fue transparente y muy comunicativo. Estamos felices con nuestro nuevo hogar.",
+    avatarUrl: "/images/refor3.jpg",
   },
 ];

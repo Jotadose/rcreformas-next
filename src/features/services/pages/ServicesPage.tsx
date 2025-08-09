@@ -1,9 +1,13 @@
 import React from "react";
-import { SetPageProp } from "@/types";
 import ServicesSection from "../components/ServicesSection";
 
-const ServicesPage = ({ setPage }: SetPageProp) => (
-  <ServicesSection setPage={setPage} />
-);
+const ServicesPage = () => {
+  return (
+    <>
+      {/* Renderizamos la sección de servicios en su versión completa */}
+      <ServicesSection />
+    </>
+  );
+};
 
 export default ServicesPage;

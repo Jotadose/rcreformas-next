@@ -1,12 +1,11 @@
 import { Dispatch, SetStateAction } from "react";
 
-// Usamos un Enum para evitar strings "mágicos" y tener autocompletado.
+// Añadimos la nueva página de Servicios
 export enum Page {
   Home = "home",
-  Services = "services",
-  Portfolio = "portfolio",
-  About = "about",
-  Contact = "contact",
+  Services = "services", // <-- NUEVA PÁGINA
+  Projects = "projects",
+  AboutContact = "about-contact",
 }
 
 export type SetPageProp = {
