@@ -31,7 +31,7 @@ export const servicesData = [
     title: "Ampliaciones",
     description:
       "Expandimos tus espacios para adaptarnos a tus nuevas necesidades.",
-    icon: "👷‍♂️",
+    icon: "➕",
   },
   {
     id: 6,
@@ -55,6 +55,7 @@ export const servicesData = [
     icon: "🖌️",
   },
 ];
+
 export const portfolioData = [
   {
     id: 1,
@@ -66,13 +67,13 @@ export const portfolioData = [
     id: 2,
     title: "Construcción de Oficina",
     category: "Obra Nueva",
-    imageUrl: "/images/refor4.jpg",
+    imageUrl: "/images/refor3.jpg",
   },
   {
     id: 3,
     title: "Acabados de Baño",
     category: "Remodelación",
-    imageUrl: "/images/refor6.jpg",
+    imageUrl: "/images/refor4.jpg",
   },
   {
     id: 4,
@@ -84,7 +85,7 @@ export const portfolioData = [
     id: 5,
     title: "Mantenimiento de Fachada",
     category: "Mantenimiento",
-    imageUrl: "/images/refor3.jpg",
+    imageUrl: "/images/refor6.jpg",
   },
   {
     id: 6,
@@ -111,7 +112,6 @@ export const portfolioData = [
     imageUrl: "/images/refor10.jpg",
   },
 ];
-// ... (después del array portfolioData)
 
 export const instagramPosts = [
   {
@@ -145,27 +145,43 @@ export const instagramPosts = [
     caption: "Renovación completa de fachada. Una nueva primera impresión.",
   },
 ];
-// --- NUEVA SECCIÓN DE DATOS PARA TESTIMONIOS ---
+
 export const testimonialsData = [
   {
     id: 1,
     name: "Ana, La Serena",
     comment:
       "El equipo de RC transformó completamente la fachada de mi casa. Su profesionalismo y atención al detalle superaron mis expectativas. ¡Totalmente recomendados!",
-    avatarUrl: "/images/refor13.jpg",
+    avatarUrl: "https://placehold.co/100x100/374151/F9FAFB?text=A",
   },
   {
     id: 2,
     name: "Carlos, Coquimbo",
     comment:
       "Necesitaba un mantenimiento rápido y eficiente para mi local comercial y cumplieron con todo. Mínima interrupción y un trabajo impecable. Gran servicio.",
-    avatarUrl: "/images/refor23.jpg",
+    avatarUrl: "https://placehold.co/100x100/374151/F9FAFB?text=C",
   },
   {
     id: 3,
     name: "Familia Torres",
     comment:
       "Desde el diseño hasta la ejecución de nuestra remodelación, el equipo fue transparente y muy comunicativo. Estamos felices con nuestro nuevo hogar.",
-    avatarUrl: "/images/refor3.jpg",
+    avatarUrl: "https://placehold.co/100x100/374151/F9FAFB?text=FT",
+  },
+];
+
+// --- AÑADE ESTE NUEVO ARRAY DE DATOS ---
+export const beforeAfterData = [
+  {
+    id: 1,
+    title: "Renovación de Fachada Comercial",
+    beforeUrl: "/images/refor6.jpg", // Usa tus imágenes reales aquí
+    afterUrl: "/images/refor7.jpg",
+  },
+  {
+    id: 2,
+    title: "Transformación de Baño",
+    beforeUrl: "/images/refor4.jpg",
+    afterUrl: "/images/refor8.jpg",
   },
 ];
