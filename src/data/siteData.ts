@@ -152,21 +152,21 @@ export const testimonialsData = [
     name: "Ana, La Serena",
     comment:
       "El equipo de RC transformó completamente la fachada de mi casa. Su profesionalismo y atención al detalle superaron mis expectativas. ¡Totalmente recomendados!",
-    avatarUrl: "https://placehold.co/100x100/374151/F9FAFB?text=A",
+    avatarUrl: "/images/refor11.jpg",
   },
   {
     id: 2,
     name: "Carlos, Coquimbo",
     comment:
       "Necesitaba un mantenimiento rápido y eficiente para mi local comercial y cumplieron con todo. Mínima interrupción y un trabajo impecable. Gran servicio.",
-    avatarUrl: "https://placehold.co/100x100/374151/F9FAFB?text=C",
+    avatarUrl: "/images/refor5.jpg",
   },
   {
     id: 3,
     name: "Familia Torres",
     comment:
       "Desde el diseño hasta la ejecución de nuestra remodelación, el equipo fue transparente y muy comunicativo. Estamos felices con nuestro nuevo hogar.",
-    avatarUrl: "https://placehold.co/100x100/374151/F9FAFB?text=FT",
+    avatarUrl: "/images/refor23.jpg",
   },
 ];
 
