@@ -8,7 +8,7 @@ const Hero = ({ setPage }: SetPageProp) => (
   <section className="relative min-h-[70vh] md:min-h-[90vh] flex items-center justify-center text-center overflow-hidden py-20">
     <div className="absolute inset-0 z-0">
       <Image
-        src="/images/13.jpg" // Puedes cambiar esta ruta por la imagen que prefieras
+        src="/images/refor13.jpg" // Puedes cambiar esta ruta por la imagen que prefieras
         alt="Fondo de proyecto de construcción"
         layout="fill"
         objectFit="cover"
