@@ -2,22 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import { SetPageProp, Page } from "@/types";
 import Button from "@/components/ui/Button";
-import Image from "next/image";
 
 const Hero = ({ setPage }: SetPageProp) => (
-  <section className="relative min-h-[70vh] md:min-h-[90vh] flex items-center justify-center text-center overflow-hidden py-20">
-    <div className="absolute inset-0 z-0">
-      <Image
-        src="/images/refor13.jpg" // Puedes cambiar esta ruta por la imagen que prefieras
-        alt="Fondo de proyecto de construcción"
-        layout="fill"
-        objectFit="cover"
-        className="opacity-20"
-        priority
-      />
-      <div className="absolute inset-0 bg-brand-black/20"></div>
-    </div>
-
+  // Hacemos que la sección sea transparente para que se vea el fondo global
+  <section className="relative min-h-[70vh] md:min-h-[90vh] flex items-center justify-center text-center overflow-hidden py-20 bg-transparent">
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <motion.h1
         initial={{ opacity: 0, y: 20 }}

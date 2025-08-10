@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins, Roboto } from "next/font/google";
+import Image from "next/image"; // <-- 1. Importar Image
 import "./globals.css";
 
 const poppins = Poppins({
@@ -28,8 +29,19 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${poppins.variable} ${roboto.variable} font-sans bg-brand-dark text-brand-white`}
+        className={`${poppins.variable} ${roboto.variable} font-sans text-brand-white`}
       >
+        {/* --- 2. FONDO FIJO GLOBAL --- */}
+        <div className="fixed inset-0 z-[-1]">
+          <Image
+            src="/images/refor13.jpg" // La imagen que elegiste
+            alt="Fondo de textura de construcción"
+            layout="fill"
+            objectFit="cover"
+            className="opacity-10" // Opacidad muy sutil
+          />
+          <div className="absolute inset-0 bg-brand-dark/90"></div>
+        </div>
         {children}
       </body>
     </html>
