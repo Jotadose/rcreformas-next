@@ -15,7 +15,7 @@ const Hero = ({ setPage }: SetPageProp) => (
         className="opacity-20"
         priority
       />
-      <div className="absolute inset-0 bg-brand-blue/80"></div>
+      <div className="absolute inset-0 bg-brand-black/20"></div>
     </div>
 
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
