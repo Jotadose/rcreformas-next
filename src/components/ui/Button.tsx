@@ -1,13 +1,14 @@
 import React from "react";
-import { motion } from "framer-motion";
+// Importamos HTMLMotionProps para una mejor integración de tipos
+import { motion, HTMLMotionProps } from "framer-motion";
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+// Extendemos de HTMLMotionProps en lugar de los atributos de botón estándar
+interface ButtonProps extends HTMLMotionProps<"button"> {
   children: React.ReactNode;
   className?: string;
 }
 
 const Button = ({ children, className, ...props }: ButtonProps) => {
-  // Aseguramos que el color del texto sea 'brand-dark'
   const baseClasses =
     "px-6 py-3 font-heading font-bold text-brand-dark bg-brand-yellow rounded-full shadow-md transition-colors duration-300 transform hover:bg-brand-white hover:text-brand-dark";
 
