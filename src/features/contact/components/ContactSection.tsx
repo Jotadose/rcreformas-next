@@ -5,16 +5,9 @@ import Button from "@/components/ui/Button";
 import WhatsAppButton from "@/components/ui/WhatsAppButton"; // Importamos el nuevo botón
 
 const ContactSection = () => (
-  <section className="relative py-20 md:py-32 overflow-hidden">
+  <section className="relative py-20 md:py-32 overflow-hidden bg-transparent">
     {/* Imagen de fondo con superposición oscura */}
     <div className="absolute inset-0 z-0">
-      <Image
-        src="/images/refor13.jpg" // Usamos una de tus imágenes
-        alt="Fondo de contacto"
-        layout="fill"
-        objectFit="cover"
-        className="opacity-20"
-      />
       <div className="absolute inset-0 bg-dark-bg/80"></div>
     </div>
 

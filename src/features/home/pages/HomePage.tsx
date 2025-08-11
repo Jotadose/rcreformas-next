@@ -8,10 +8,10 @@ import Button from "@/components/ui/Button";
 const HomePage = ({ setPage }: SetPageProp) => (
   <>
     <Hero setPage={setPage} />
-    {/* Ahora la sección de servicios en la Home tiene un botón para ver más */}
-    <ServicesSection summary={true} setPage={setPage} />
+
+    <ServicesSection />
     <TestimonialsSection />
-    <div className="text-center py-16 bg-brand-dark">
+    <div className="text-center py-16 bg-transparent">
       <Button onClick={() => setPage(Page.Projects)}>
         Ver Nuestros Proyectos
       </Button>

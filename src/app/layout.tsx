@@ -31,16 +31,17 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} ${roboto.variable} font-sans text-brand-white`}
       >
-        {/* --- 2. FONDO FIJO GLOBAL --- */}
+        {/* --- 2. FONDO FIJO GLOBAL CON OPACIDAD AJUSTADA --- */}
         <div className="fixed inset-0 z-[-1]">
           <Image
             src="/images/refor13.jpg" // La imagen que elegiste
             alt="Fondo de textura de construcción"
             layout="fill"
             objectFit="cover"
-            className="opacity-10" // Opacidad muy sutil
+            className="opacity-70" // <-- Aumentamos la visibilidad de la imagen
           />
-          <div className="absolute inset-0 bg-brand-dark/90"></div>
+          <div className="absolute inset-0 bg-brand-dark/80"></div>{" "}
+          {/* <-- Reducimos la opacidad del overlay oscuro */}
         </div>
         {children}
       </body>
