@@ -21,7 +21,7 @@ const InstagramGallery = () => {
   }, []);
 
   return (
-    <section className="py-20 md:py-28 bg-brand-light-gray">
+    <section className="py-20 md:py-28 bg-transparent">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -30,11 +30,11 @@ const InstagramGallery = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="font-heading text-3xl md:text-4xl font-bold uppercase text-brand-blue">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold uppercase text-brand-yellow">
             Nuestra Galería en{" "}
             <span className="text-brand-yellow">Instagram</span>
           </h2>
-          <p className="mt-4 max-w-2xl mx-auto text-lg text-brand-dark/70">
+          <p className="mt-4 max-w-2xl mx-auto text-lg text-brand-white/70">
             Explora nuestros últimos trabajos, procesos y el día a día de
             nuestros proyectos.
           </p>

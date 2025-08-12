@@ -14,6 +14,8 @@ module.exports = {
         "brand-dark": "#171717",
         "brand-white": "#FFFFFF",
         "brand-light-gray": "#F8F9FA",
+        "brand-green": "#88D286",
+        "brand-red": "#FF6B6B",
       },
       fontFamily: {
         sans: ["var(--font-roboto)"],

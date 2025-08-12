@@ -166,7 +166,7 @@ export const testimonialsData = [
     name: "Familia Torres",
     comment:
       "Desde el diseño hasta la ejecución de nuestra remodelación, el equipo fue transparente y muy comunicativo. Estamos felices con nuestro nuevo hogar.",
-    avatarUrl: "/images/refor23.jpg",
+    avatarUrl: "/images/refor13.jpg",
   },
 ];
 

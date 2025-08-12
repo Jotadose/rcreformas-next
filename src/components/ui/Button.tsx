@@ -10,7 +10,7 @@ interface ButtonProps extends HTMLMotionProps<"button"> {
 
 const Button = ({ children, className, ...props }: ButtonProps) => {
   const baseClasses =
-    "px-6 py-3 font-heading font-bold text-brand-dark bg-brand-yellow rounded-full shadow-md transition-colors duration-300 transform hover:bg-brand-white hover:text-brand-dark";
+    "px-6 py-3 font-heading font-bold text-brand-dark bg-brand-yellow rounded-full shadow-md transition-colors duration-300 transform hover:bg-brand-green hover:text-brand-light-gray focus:outline-none focus:ring-2 focus:ring-brand-green focus:ring-opacity-50";
 
   return (
     <motion.button

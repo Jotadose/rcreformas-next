@@ -7,9 +7,9 @@ import { testimonialsData } from "@/data/siteData";
 const TestimonialsSection = () => {
   return (
     <section className="py-20 md:py-28 bg-transparent">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="font-heading text-3xl md:text-4xl font-bold uppercase text-brand-white">
+      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16 max-w-3xl mx-auto">
+          <h2 className="font-heading text-[clamp(1.8rem,4vw,2.5rem)] font-bold uppercase text-brand-white">
             Lo que dicen{" "}
             <span className="text-brand-yellow">Nuestros Clientes</span>
           </h2>
@@ -22,7 +22,6 @@ const TestimonialsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              // --- CAMBIO AQUÍ: Aplicamos el estilo Glassmorphism ---
               className="bg-white/10 backdrop-blur-md p-8 rounded-lg border border-white/20 hover:border-brand-yellow transition-all duration-300 flex flex-col"
             >
               <MessageSquare className="text-brand-yellow/50 mb-4" size={32} />

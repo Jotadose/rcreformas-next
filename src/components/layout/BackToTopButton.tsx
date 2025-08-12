@@ -32,8 +32,7 @@ const BackToTopButton = () => {
           transition={{ duration: 0.3 }}
           type="button"
           onClick={scrollToTop}
-          // --- CAMBIO AQUÍ: Estilo más prominente ---
-          className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-brand-yellow text-brand-dark shadow-lg flex items-center justify-center"
+          className="fixed bottom-6 left-6 z-50 w-14 h-14 rounded-full bg-brand-orange text-brand-white shadow-lg flex items-center justify-center"
           aria-label="Volver arriba"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}

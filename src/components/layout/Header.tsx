@@ -8,11 +8,10 @@ import Button from "../ui/Button";
 const Header = ({ setPage }: SetPageProp) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Actualizamos los enlaces de navegación
   const navLinks: { name: string; page: Page }[] = [
     { name: "Inicio", page: Page.Home },
-    { name: "Servicios", page: Page.Services }, // <-- NUEVO ENLACE
     { name: "Proyectos", page: Page.Projects },
+    { name: "Nosotros", page: Page.AboutContact },
   ];
 
   const handleNavClick = (page: Page) => {
@@ -21,9 +20,9 @@ const Header = ({ setPage }: SetPageProp) => {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-brand-blue/90 backdrop-blur-sm shadow-lg">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+    <header className="sticky top-0 z-50 w-full bg-brand-blue/30 backdrop-blur-sm shadow-lg">
+      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-12">
           <div
             className="cursor-pointer"
             onClick={() => handleNavClick(Page.Home)}
@@ -34,7 +33,7 @@ const Header = ({ setPage }: SetPageProp) => {
               width={160}
               height={40}
               priority
-              className="h-10 w-auto"
+              className="h-8 w-auto"
             />
           </div>
 
@@ -69,7 +68,7 @@ const Header = ({ setPage }: SetPageProp) => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden absolute top-full left-0 w-full bg-brand-blue shadow-lg"
+            className="md:hidden absolute top-full left-0 w-full bg-brand-blue/30 shadow-lg"
           >
             <nav className="flex flex-col items-center p-4 space-y-2">
               {navLinks.map((link) => (
